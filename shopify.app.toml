@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "97ca2a9d893e6fa1e0e62ca35b120110"
+name = "cart-goals"
+application_url = "https://g-retrieved-baby-toll.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "appdevelopment-ac.myshopify.com"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://g-retrieved-baby-toll.trycloudflare.com/auth/callback",
+  "https://g-retrieved-baby-toll.trycloudflare.com/auth/shopify/callback",
+  "https://g-retrieved-baby-toll.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
